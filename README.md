@@ -2,15 +2,19 @@
 
 
 ##Instalar angualr:
-npm install -g @angular/cli
+```npm install -g @angular/cli```
 
 ##Inicializar proyecto:
-ng new --standalone NombreProyecto
+```ng new --standalone NombreProyecto```
     #Routing: yes
     #Style: SCSS
 
 ##Crear componente:
-ng g c NombreComponente --standalone
+```ng g c NombreComponente --standalone```
+
+##Para trabajar con OnPush en el componente @Componet hay que añadir:
+```changeDetection: ChangeDetectionStrategy.OnPush```
+
 
 ##Info varia:
 
