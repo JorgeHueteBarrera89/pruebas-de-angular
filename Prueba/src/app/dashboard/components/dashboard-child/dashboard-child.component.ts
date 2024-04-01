@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit,SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-child',
@@ -9,12 +9,14 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   styleUrl: './dashboard-child.component.scss'
 })
 export class DashboardChildComponent implements OnInit {
-@Input() text: String;
+@Input() text: String = '';
 
-constructor(){
-  this.text='';
+
+
+ngOnChanges(changes: SimpleChanges): void {
+console.log('se cambio el dashboard-child', changes);
+
 }
-
 ngOnInit(): void {
     console.log('se inicializo el dashboard-child');
 
