@@ -1,0 +1,30 @@
+<button (click)="fondo()">Cambiar fondo</button>
+<button (click)="conditionFuntion()">Cambiar condition</button>
+
+<br>
+}
+<ng-container [ngSwitch]="condition">
+<p *ngSwitchCase="true">Me renderice</p>
+<p *ngSwitchCase="false">Me renderice pero ahora es false</p>
+</ng-container>
+
+
+<br>
+<br>
+
+<button (click)="conditionFuntion()">+</button>
+{{nivel}}
+<button (click)="conditionFuntion()">-</button>
+
+<br>
+<ng-container [ngSwitch]="nivel">
+    <p *ngSwitchCase="0"></p>
+    <p *ngSwitchCase="1"></p>
+    <p *ngSwitchCase="2"></p>
+    <p *ngSwitchCase="3"></p>
+    <p *ngSwitchCase="4"></p>
+    </ng-container>
+
+
+
+
