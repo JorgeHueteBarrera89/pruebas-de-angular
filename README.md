@@ -40,6 +40,7 @@ No se pueden combinar "ngIf" y "ngFor" en una misma linea, pero si que se puede 
 
 
 "ngSwitch" y "ngSwitchCase" sirve para seleccionar un "item" en concreto:
+
     #   <ng-container [ngSwitch]="NombreOpcionSelecionada">
     #       <div *ngSwitchCase="'Opcion1'">Soy la opcion 1</div>
     #       <div *ngSwitchCase="'Opcion2'">Soy la opcion 2</div>
