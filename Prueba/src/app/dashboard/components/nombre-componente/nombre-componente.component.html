@@ -2,7 +2,6 @@
 <button (click)="conditionFuntion()">Cambiar condition</button>
 
 <br>
-}
 <ng-container [ngSwitch]="condition">
 <p *ngSwitchCase="true">Me renderice</p>
 <p *ngSwitchCase="false">Me renderice pero ahora es false</p>
@@ -12,17 +11,17 @@
 <br>
 <br>
 
-<button (click)="conditionFuntion()">+</button>
-{{nivel}}
-<button (click)="conditionFuntion()">-</button>
+<button (click)="nivelFuntion(1)">+</button>
+    {{nivel}}
+<button (click)="nivelFuntion(-1)">-</button>
 
 <br>
 <ng-container [ngSwitch]="nivel">
-    <p *ngSwitchCase="0"></p>
-    <p *ngSwitchCase="1"></p>
-    <p *ngSwitchCase="2"></p>
-    <p *ngSwitchCase="3"></p>
-    <p *ngSwitchCase="4"></p>
+    <p *ngSwitchCase="0">Invitado</p>
+    <p *ngSwitchCase="1">Usuario</p>
+    <p *ngSwitchCase="2">Mod</p>
+    <p *ngSwitchCase="3">Admin</p>
+    <p *ngSwitchCase="4">Root</p>
     </ng-container>
 
 

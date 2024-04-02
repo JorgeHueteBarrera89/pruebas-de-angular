@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class NombreComponenteComponent {
 
   condition= true;
-  Nivel = 0;
+  nivel = 0;
 
   fondo() {
     // Generate a random color
@@ -23,6 +23,17 @@ export class NombreComponenteComponent {
 
 conditionFuntion(){
   this.condition = !this.condition;
+}
+
+nivelFuntion(valor: number){
+  this.nivel =  this.nivel + valor;
+
+  if(this.nivel >= 4){
+    this.nivel = 4;
+  }else if(this.nivel <= 0){
+    this.nivel = 0;
+  }
+
 }
 
 
